@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "194b5a6f-519a-4c56-af52-79f50b43c362",
+		"name": "API Rest Laravel ejemplo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categoria/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas las categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categoria/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categoria",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cat_nom\": \"IPHONE\",\r\n    \"cat_obs\": \"EJEMPLO IPHONE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/addcategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addcategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cat_nom\": \"IPHONE3\",\r\n    \"cat_obs\": \"EJEMPLO IPHONE3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/updatecategoria/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updatecategoria",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/deletecategoria/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deletecategoria",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
