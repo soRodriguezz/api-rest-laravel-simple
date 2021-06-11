@@ -15,7 +15,8 @@ El proyecto solo esta habilitado como CRUD de categoria.
 * XAMPP (PHP, Apache y MySQL)
 * IDE (PHPStorm, Netbeans,VSCode, etc)
 * Postman
-
+* Laravel
+* Composer
 
 ---
 
